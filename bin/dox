@@ -4,14 +4,18 @@
  * Module dependencies.
  */
 
-var command = require('commander'),
-    path    = require('path'),
-    colors  = require("colors"),
-    _       = require('underscore'),
-    chalk   = require('chalk'),
-    mkdirp  = require('mkdirp'),
-    fs      = require('fs'),
-    dox     = require('../lib/default');
+var command       = require('commander'),
+    path          = require('path'),
+    colors        = require("colors"),
+    _             = require('underscore'),
+    underscoreStr = require('underscore.string'),
+    chalk         = require('chalk'),
+    mkdirp        = require('mkdirp'),
+    fs            = require('fs'),
+    merge         = require('../lib/merge'),
+    dox           = require('../lib/default');
+
+merge(_, {str: underscoreStr});
 
 var projectHomePath       = path.resolve('.'),
     defaultConfigFile     = require(path.resolve(__dirname, '../lib/default.json')),
@@ -45,7 +49,7 @@ console.log('------------------------------------------------------------'.rainb
 /**
  * 展示帮助信息函数
  */
-var showHelp =function() {
+var showHelp = function () {
     process.stdout.write(command.helpInformation());
     command.emit('--help or -h');
     process.exit(1);
@@ -73,7 +77,9 @@ switch (cmd) {
 
         testBuildCommand(process.argv.slice(3));
         //process.exit(1);
-
+        loadConfigFiled.source.exclude = _.map(loadConfigFiled.source.exclude, function (item) {
+            return _.str.strRight(path.resolve(item),loadConfigFiled.projectHomePath).substring(1);
+        });
         dox(loadConfigFiled, function (err) {
             if (err) {
                 console.log(chalk.blue.bgRed.bold('\n\t生成文档失败' + err));
