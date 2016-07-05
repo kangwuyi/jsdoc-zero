@@ -14,7 +14,7 @@ var command = require('commander'),
     dox     = require('../lib/default');
 
 var projectHomePath       = path.resolve('.'),
-    defaultConfigFile     = require(path.resolve(projectHomePath, 'lib/default.json')),
+    defaultConfigFile     = require(path.resolve(__dirname, '../lib/default.json')),
     userDefinedConfigFile = require(path.resolve(projectHomePath, 'dox.config.json')),
     loadConfigFiled       = _.extend(defaultConfigFile, userDefinedConfigFile),
     COMMANDLIST           = ['build'];  // 定义命令列表

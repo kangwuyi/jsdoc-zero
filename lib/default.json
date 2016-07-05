@@ -5,9 +5,7 @@
     "include": [
       "lib"
     ],
-    "exclude": [
-      "node_modules"
-    ],
+    "exclude": [],
     "Suffix" : [
       ".js"
     ],
