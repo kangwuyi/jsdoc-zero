@@ -1,0 +1,123 @@
+{% extends './templates/layout.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+{% parent %}
+{% endblock %}
+
+{% block content %}
+
+<nav>
+    <h2><a href="./index_jsdoc_zero_menu.html">返回目录</a></h2>
+    <h4>{{ name }} API索引</h4>
+    <ul class="indexs">
+        {% for key, val in content %}
+        {% if !val.ignore %}
+        <li>
+            <a href="#{{val.line}}_{{val.codeStart}}_{{key}}" style="color:#4d4e53;background: {% if val.ctx.receiver %} #FF5722 {% else %} #FFEB3B {% endif %};">
+                {{val.ctx.name|default('没有名称')}}
+            </a>
+        </li>
+        {%endif%}
+        {%endfor%}
+    </ul>
+    <hr/>
+</nav>
+<div id="main">
+    <h1 class="page-title">文件：{{name}}</h1>
+    <header>
+        <h2>
+            <span class="ancestors">路径：{{path.filePath}}</span>
+        </h2>
+    </header>
+    <section id="api" class="api">
+        {% for key, val in content %}
+        {% if !val.ignore %}
+        <article id="{{val.line}}_{{val.codeStart}}_{{key}}" style="margin: 20px 0;background: {% if val.ctx.receiver %} #FF5722 {% else %} #FFEB3B {% endif %};border-radius: 5px;padding: 5px;">
+            <h3 style="text-align: center;color: #8BC34A;border: 1px dashed #8BC34A;">注释名称: {{val.ctx.name|default('没有名称')}}</h3>
+            <table class="params">
+                <thead>
+                <tr>
+                    {% if val.ctx.type %}
+                    <th>type</th>
+                    {% endif %}
+                    <th>isClass</th>
+                    <th>isPrivate</th>
+                    <th>isEvent</th>
+                    <th class="last">isConstructor</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    {% if val.ctx.type %}
+                    <td>{{val.ctx.type}}</td>
+                    {% endif %}
+                    <td>{{val.isClass}}</td>
+                    <td>{{val.isPrivate}}</td>
+                    <td>{{val.isEvent}}</td>
+                    <td class="last">{{val.isConstructor}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class='container-overview'>
+                <div class="row" style="padding: 20px;margin: 0;">
+                    <div class="col-md-1" style="color:#009688;">描述：</div>
+                    <div class="showCode col-md-11" style="padding: 0;">
+                        {% autoescape false %}
+                            <pre class="prettyprint" style="background: #CDDC39;margin:0;display: inline-table;">
+                                {{ val.description.full }}
+                            </pre>
+                        {% endautoescape %}
+                    </div>
+                </div>
+
+                {% if val.tags.length > 0 %}
+                <table class="params"
+                       style="background: #70b5ee;margin: 0 20px;">
+                    <thead>
+                    <tr>
+                        <th>参数</th>
+                        <th>描述</th>
+                        <th>类型</th>
+                        <th>类型描述</th>
+                        <th>optional</th>
+                        <th>nullable</th>
+                        <th>nonNullable</th>
+                        <th class="last">variable</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for key, val_tag in val.tags|reverse %}
+                    {% if val_tag %}
+                    <tr>
+                        <td>{{val_tag.type}}</td>
+                        <td>{{val_tag.string}}</td>
+                        <td>{{val_tag.types|join(',')}}</td>
+                        {% autoescape false %}
+                        <td>{{val_tag.typesDescription}}</td>
+                        {% endautoescape %}
+                        <td>{{val_tag.optional}}</td>
+                        <td>{{val_tag.nullable}}</td>
+                        <td>{{val_tag.nonNullable}}</td>
+                        <td class="last">{{val_tag.variable}}</td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+
+                <div class="row" style="padding: 0 20px 20px 20px;margin: 0;">
+                    <dl class="details" style="background: #f5f5f5;margin: 14px 0 0 0;padding: 3px 10px;color: #607D8B;">
+                        <span>注释位置（link）：{{val.line}}，源码位置（link）： {{val.codeStart}}</span>
+                    </dl>
+                </div>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </section>
+</div>
+<br class="clear">
+{% endblock %}

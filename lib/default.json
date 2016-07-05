@@ -1,0 +1,20 @@
+{
+  "name"     : "default",
+  "version"  : "0.0.1",
+  "source"   : {
+    "include": [
+      "lib"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "Suffix" : [
+      ".js"
+    ],
+    "output" : "doc/dox"
+  },
+  "markdown" : {
+    "switch": false
+  },
+  "parameter": {}
+}

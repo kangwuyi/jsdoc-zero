@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>索引</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/prettify/r298/prettify.min.css">
+    <link rel="stylesheet" href="http://kevinburke.bitbucket.org/markdowncss/markdown.css">
+</head>
+<body>
+
+<h5>当前文件名：{{name}}</h5>
+<span><a href="./index_jsdoc_zero_menu.html">返回目录</a></span>
+<hr/>
+<div class="params" id="readme">
+    {% autoescape false %}
+    {{content}}
+    {% endautoescape %}
+</div>
+<script type="application/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="application/javascript" src="http://apps.bdimg.com/libs/prettify/188.0.0/prettify.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(window).load(function(){
+            $("pre").addClass("prettyprint source linenums");
+            prettyPrint();
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+

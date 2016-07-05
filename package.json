@@ -1,0 +1,46 @@
+{
+  "name": "jsdoc-zero",
+  "version": "0.0.3",
+  "description": "Generate documentation by jsdoc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "bin": {
+    "jdz": "bin/dox"
+  },
+  "keywords": [
+    "documentation",
+    "jsdoc",
+    "dox"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
+    "commander": "*",
+    "dox": "*",
+    "marked": "*",
+    "mkdirp": "^0.5.0",
+    "path": "^0.12.7",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "expect.js": "*",
+    "mocha": "*"
+  },
+  "author": "KAHN1990",
+  "contributors": [
+    "KAHN1990 <kangjian1990@live.com> (https://github.com/kahn1990)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kahn1990/jsdoc-zero"
+  },
+  "bugs": {
+    "url": "https://github.com/kahn1990/jsdoc-zero/issues"
+  }
+}
