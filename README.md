@@ -1,4 +1,10 @@
 JSDOC-ZERO ![](https://travis-ci.org/kahn1990/jsdoc-zero.svg?branch=master)
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[npm-image]: https://img.shields.io/npm/v/jsdoc-zero.svg?style=flat
+[npm-url]: https://npmjs.org/package/jsdoc-zero
+[downloads-image]: https://img.shields.io/npm/dm/jsdoc-zero.svg?style=flat
+[downloads-url]: https://npmjs.org/package/jsdoc-zero
 ===========================================================================
 ## 简介 (Introductions)
 
