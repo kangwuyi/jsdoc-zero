@@ -10,6 +10,8 @@ JSDOC-ZERO ![](https://travis-ci.org/kahn1990/jsdoc-zero.svg?branch=master)
 
 基于 jsdoc 规范，适用于工程较大、文件内容较多、文件夹层次较深的项目。
 
+[--> 查看示例](http://kahn1990.com/jsdoc-zero/doc/dox/index.html)
+
 ## 安装 (Installation)
 安装 JSDOC-ZERO 为全局工具：
 
