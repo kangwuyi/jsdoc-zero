@@ -2,125 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18822a7a-23fb-4b50-a58f-206293e4d8e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsdoc-zero.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsdoc_zero_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/Q09ERV9PRl9DT05EVUNULm1k.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/SGlzdG9yeS5tZA==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/UmVhZG1lLm1k.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/benchmarks/YmVuY2htYXJrc1xtaWRkbGV3YXJlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/benchmarks/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdocList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/api/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/api/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/list/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown10.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown11.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown13.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown14.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/markdown/markdown9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/prettify.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/jsdoc_static/prettify.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/lib/bGliXGFwcGxpY2F0aW9uLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/lib/bGliXGNvbnRleHQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/lib/bGliXHJlc3BvbnNlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/lib/bGliXHJlcXVlc3QuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/lib/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XG9uZXJyb3IuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XGFzc2VydC5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XGNvb2tpZXMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XGluc3BlY3QuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XHN0YXRlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XHRocm93Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/dGVzdFxjb250ZXh0XHRvSlNPTi5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/context/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/dGVzdFxhcHBsaWNhdGlvbi5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/dGVzdFxjb250ZXh0Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/experimental/dGVzdFxleHBlcmltZW50YWxcYXN5bmMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/experimental/dGVzdFxleHBlcmltZW50YWxcaW5kZXguanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/experimental/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XG9yaWdpbi5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGFjY2VwdHMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGFjY2VwdHNDaGFyc2V0cy5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGFjY2VwdHNFbmNvZGluZ3MuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGFjY2VwdHNMYW5ndWFnZXMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGNoYXJzZXQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGZyZXNoLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGdldC5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGhlYWRlci5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGhlYWRlcnMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGhvc3QuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGhvc3RuYW1lLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGhyZWYuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGlkZW1wb3RlbnQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGluc3BlY3QuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGlwLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGlwcy5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGlzLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XGxlbmd0aC5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHBhdGguanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHByb3RvY29sLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHF1ZXJ5Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHF1ZXJ5c3RyaW5nLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHN0YWxlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHN1YmRvbWFpbnMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHNlY3VyZS5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHNlYXJjaC5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/dGVzdFxyZXF1ZXN0XHR5cGUuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/request/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVx0eXBlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVx2YXJ5Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVx3cml0ZWFibGUuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxhcHBlbmQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxhdHRhY2htZW50Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxib2R5Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxldGFnLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxoZWFkZXIuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxoZWFkZXJzLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxpbnNwZWN0Lmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxpcy5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxsYXN0LW1vZGlmaWVkLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxsZW5ndGguanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxtZXNzYWdlLmpz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxyZW1vdmUuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxyZWRpcmVjdC5qcw==.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxzZXQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxzb2NrZXQuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/dGVzdFxyZXNwb25zZVxzdGF0dXMuanM=.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/dox/test/response/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jsdoc-zero.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -181,6 +63,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -329,18 +212,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468579100450</updated>
-      <workItem from="1468579101784" duration="493000" />
+      <workItem from="1468579101784" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493000" />
+    <option name="totallyTimeSpent" value="617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -375,6 +258,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
