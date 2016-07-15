@@ -5,7 +5,6 @@
     <title>Jsdoc-zero by kahn1990</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -19,36 +18,146 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+      <article class="markdown-body entry-content" itemprop="text"><p>JSDOC-ZERO <a href="https://camo.githubusercontent.com/024fb3f6e8d6bf9b8c2e7ca79c73cb2969ddcbd3/68747470733a2f2f7472617669732d63692e6f72672f6b61686e313939302f6a73646f632d7a65726f2e7376673f6272616e63683d6d6173746572" target="_blank"><img src="https://camo.githubusercontent.com/024fb3f6e8d6bf9b8c2e7ca79c73cb2969ddcbd3/68747470733a2f2f7472617669732d63692e6f72672f6b61686e313939302f6a73646f632d7a65726f2e7376673f6272616e63683d6d6173746572" alt="" data-canonical-src="https://travis-ci.org/kahn1990/jsdoc-zero.svg?branch=master" style="max-width:100%;"></a>
+        <a href="https://npmjs.org/package/jsdoc-zero"><img src="https://camo.githubusercontent.com/0b32386609c22b0563e5b3366d34f3b5207049cc/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f6a73646f632d7a65726f2e7376673f7374796c653d666c6174" alt="NPM Version" data-canonical-src="https://img.shields.io/npm/v/jsdoc-zero.svg?style=flat" style="max-width:100%;"></a>
+        <a href="https://npmjs.org/package/jsdoc-zero"><img src="https://camo.githubusercontent.com/3b305eb4a9a5711d76e365adc1fc0c28532ddd3d/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f6a73646f632d7a65726f2e7376673f7374796c653d666c6174" alt="NPM Downloads" data-canonical-src="https://img.shields.io/npm/dm/jsdoc-zero.svg?style=flat" style="max-width:100%;"></a></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+        <h1></h1>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <h2><a id="user-content-简介-introductions" class="anchor" href="#简介-introductions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>简介 (Introductions)</h2>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+        <p>基于 jsdoc 规范，适用于工程较大、文件内容较多、文件夹层次较深的项目。</p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+        <p><a href="http://kahn1990.com/jsdoc-zero/doc/dox/index.html">--> 查看示例</a></p>
+        <h2><a id="user-content-安装-installation" class="anchor" href="#安装-installation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装 (Installation)</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <p>安装 JSDOC-ZERO 为全局工具：</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+        <pre><code>$ npm install jsdoc-zero -g
+</code></pre>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <h2><a id="user-content-使用-use" class="anchor" href="#使用-use" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用 (Use)</h2>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <h3><a id="user-content-建立配置文件-create-configuration-file" class="anchor" href="#建立配置文件-create-configuration-file" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>建立配置文件 (Create configuration file)</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        <p>首先在项目根目录下建立 <code>dox.config.json</code> 文件，默认内容为：</p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/kahn1990/jsdoc-zero">Jsdoc-zero</a> is maintained by <a href="https://github.com/kahn1990">kahn1990</a>.</span>
+        <pre><code>{
+  "name"     : "default",
+  "version"  : "0.0.1",
+  "source"   : {
+    "include": [
+      "lib"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "suffix" : [
+      ".js"
+    ],
+    "output" : "doc/dox"
+  }
+}
+</code></pre>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+        <p>其中含义：</p>
+
+        <ul>
+          <li>name : 项目名称</li>
+          <li>version : 版本号码</li>
+          <li>source
+
+            <ul>
+              <li>include : 待检查目录的集合，默认检查 <code>lib</code> 文件夹</li>
+              <li>exclude : 需要过滤的目录集合，默认过滤 <code>node_modules</code> 文件夹</li>
+              <li>suffix : 待检查文件的后缀名，默认检查 <code>js</code> 文件和 <code>md</code> 文件</li>
+              <li>output : 输出目录，默认输出 <code>doc/dox</code></li>
+            </ul></li>
+        </ul>
+
+        <p>新建文件 <code>dox.config.json</code> 完成之后，根据自己的具体项目完善配置文件，然后在当前项目的根目录下的命令行中执行命令：</p>
+
+        <div class="highlight highlight-source-js"><pre>$ jdz build</pre></div>
+
+        <p>此时 <code>jdz</code> 会自动寻找项目跟目录下的 <code>dox.config.json</code> 文件进行相关操作。</p>
+
+        <h3><a id="user-content-命令行使用-command-line-usage" class="anchor" href="#命令行使用-command-line-usage" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>命令行使用 (Command line usage)</h3>
+
+        <p>如果想要在命令行直接使用，为了简单直白，我只保留了 <code>build</code> 功能，相关的参数也只有 <code>-o</code> 和 <code>-d</code>：</p>
+
+        <ul>
+          <li><code>-o</code> : 指定输出目录，如 <code>-o doc/box</code></li>
+          <li><code>-d</code> : 指定待检查目录的集合，如 <code>-d ['lib', 'server']</code></li>
+        </ul>
+
+        <p>在命令行直接执行：<code>jdz build -o doc/box -d ['lib', 'server']</code>，并且 <code>-o</code> 缺省为默认配置文件中的 <code>doc/dox</code>，<code>-d</code> 缺省为默认配置文件中的 <code>['lib']</code>。</p>
+
+        <h3><a id="user-content-注意-careful" class="anchor" href="#注意-careful" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>注意 (Careful)</h3>
+
+        <p>JSDOC-ZERO 每次生成文档的时候都会清空 <code>输出目录</code> 下的所有文件。</p>
+
+        <h3><a id="user-content-效果图-sample-picture" class="anchor" href="#效果图-sample-picture" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>效果图 (Sample picture)</h3>
+
+        <p>首先 JSDOC-ZERO 会在输出目录下建立一个索引文件： <code>index.html</code>，包含<code>待检查目录的集合</code>和其（包括子目录）目录下的所有 <code>md</code> 文件。</p>
+
+        <p><a href="./img/11_index.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_index.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>每一层文件夹逐一对应项目中 <code>待检查目录</code> 的文件夹：</p>
+
+        <p><a href="./img/11_dir.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_dir.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>然后一层一层递归：</p>
+
+        <p><a href="./img/11_dir2.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_dir2.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>生成的 <code>JSDOC</code> 规范的文件，在文件开头包含基本的文件信息：</p>
+
+        <p><a href="./img/11_js1.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_js1.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>这里设置了页面方法的锚点，用于快速跳转：</p>
+
+        <p><a href="./img/11_js4.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_js4.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>相关细节（黄色代表普通的注释，而红色代表输出到 <code>exports</code> 上的对象的注释，注释的具体细节）：</p>
+
+        <p><a href="./img/11_js2.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_js2.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>新增的搜索功能：</p>
+
+        <p><a href="./img/11_js5.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_js5.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>可根据输入的注释方法名称，寻找相关的注释文件，点击后跳转到相关文件：</p>
+
+        <p><a href="./img/11_js6.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_js6.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p><code>md</code> 文件效果图：</p>
+
+        <p><a href="./img/11_md.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_md.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <p>对于代码标色的问题，这里只是做了简单的处理，所以可能看上去有一点单调：
+          <a href="./img/11_md2.PNG" target="_blank"><img src="/kahn1990/jsdoc-zero/raw/master/img/11_md2.PNG" alt="" style="max-width:100%;"></a></p>
+
+        <h3><a id="user-content-模版" class="anchor" href="#模版" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>模版</h3>
+
+        <p>关于模板我想了很长时间，一个工具应该以简洁直白为标准应该是最好的，所以即便添加自定义模板很简单，但我还是 pass 了这个功能，希望构建自己喜欢的样式，可以自行 fork <a href="https://github.com/kahn1990/jsdoc-zero">jsdoc-zero</a> 更改里面的样式，记得点右上角的星星 (╬▔▽▔)凸。</p>
+
+        <h3><a id="user-content-依赖" class="anchor" href="#依赖" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>依赖</h3>
+
+        <p>依赖于 TJ 的 <a href="https://github.com/tj/dox">dox</a>。</p>
+
+        <h3><a id="user-content-更新" class="anchor" href="#更新" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>更新</h3>
+
+        <h4><a id="user-content-2016715" class="anchor" href="#2016715" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>2016/7/15</code></h4>
+
+        <ol>
+          <li>修改部分代码写法，增强可阅读性</li>
+          <li>修改所有页面的 css 样式</li>
+          <li>增加相对静态路径，将 js 等静态资源从 cdn 转为本地静态资源</li>
+          <li>增加文件相关信息</li>
+          <li>增加搜索功能，可以根据相关注释方法名搜索到相应文件</li>
+          <li>增加返回根目录功能以及生成文件名用 base64 处理</li>
+        </ol>
+      </article>
 
     </section>
 
