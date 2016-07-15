@@ -3,484 +3,195 @@
 <head>
     <meta charset="utf-8">
     <title>jsdoc-zero</title>
-
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/prettify/r298/prettify.min.css">
-    <script type="application/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="application/javascript" src="http://apps.bdimg.com/libs/prettify/188.0.0/prettify.min.js"></script>
-    <script type="application/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <style>
-
-        html
-        {
-            overflow: auto;
-            background-color: #fff;
-            font-size: 14px;
-        }
-
-        body
-        {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.5;
-            color: #4d4e53;
-            background-color: white;
-        }
-
-        a, a:visited, a:active {
-            color: #0095dd;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        header
-        {
-            display: block;
-            padding: 0px 4px;
-        }
-
-        tt, code, kbd, samp {
-            font-family: Consolas, Monaco, 'Andale Mono', monospace;
-        }
-
-        .class-description {
-            font-size: 130%;
-            line-height: 140%;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-
-        .class-description:empty {
-            margin: 0;
-        }
-
-        #main {
-            float: left;
-            width: 70%;
-        }
-
-        article dl {
-            margin-bottom: 40px;
-        }
-
-        section
-        {
-            display: block;
-            background-color: #fff;
-            padding: 12px 24px;
-            border-bottom: 1px solid #ccc;
-            margin-right: 30px;
-        }
-
-        .variation {
-            display: none;
-        }
-
-        .signature-attributes {
-            font-size: 60%;
-            color: #aaa;
-            font-style: italic;
-            font-weight: lighter;
-        }
-
-        nav
-        {
-            display: block;
-            float: right;
-            margin-top: 28px;
-            width: 30%;
-            box-sizing: border-box;
-            border-left: 1px solid #ccc;
-            padding-left: 16px;
-        }
-
-        nav ul {
-            font-family: 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
-            font-size: 100%;
-            line-height: 17px;
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-        }
-
-        nav ul a, nav ul a:visited, nav ul a:active {
-            font-family: Consolas, Monaco, 'Andale Mono', monospace;
-            line-height: 18px;
-            color: #4D4E53;
-        }
-
-        nav h3 {
-            margin-top: 12px;
-        }
-
-        nav li {
-            margin-top: 6px;
-        }
-
-        footer {
-            display: block;
-            padding: 6px;
-            margin-top: 12px;
-            font-style: italic;
-            font-size: 90%;
-        }
-
-        h1, h2, h3, h4 {
-            font-weight: 200;
-            margin: 0;
-        }
-
-        h1
-        {
-            font-family: 'Open Sans Light', sans-serif;
-            font-size: 48px;
-            letter-spacing: -2px;
-            margin: 12px 24px 20px;
-        }
-
-        h2, h3
-        {
-            font-size: 30px;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-        }
-
-        h4
-        {
-            font-size: 18px;
-            letter-spacing: -0.33px;
-            margin-bottom: 12px;
-            color: #4d4e53;
-        }
-
-        h5, .container-overview .subsection-title
-        {
-            font-size: 120%;
-            font-weight: bold;
-            letter-spacing: -0.01em;
-            margin: 8px 0 3px 0;
-        }
-
-        h6
-        {
-            font-size: 100%;
-            letter-spacing: -0.01em;
-            margin: 6px 0 3px 0;
-            font-style: italic;
-        }
-
-        .ancestors { color: #999; }
-        .ancestors a
-        {
-            color: #999 !important;
-            text-decoration: none;
-        }
-
-        .clear
-        {
-            clear: both;
-        }
-
-        .important
-        {
-            font-weight: bold;
-            color: #950B02;
-        }
-
-        .yes-def {
-            text-indent: -1000px;
-        }
-
-        .type-signature {
-            color: #aaa;
-        }
-
-        .name, .signature {
-            font-family: Consolas, Monaco, 'Andale Mono', monospace;
-        }
-
-        .details { margin-top: 14px; border-left: 2px solid #DDD; }
-        .details dt { width: 120px; float: left; padding-left: 10px;  padding-top: 6px; }
-        .details dd { margin-left: 70px; }
-        .details ul { margin: 0; }
-        .details ul { list-style-type: none; }
-        .details li { margin-left: 30px; padding-top: 6px; }
-        .details pre.prettyprint { margin: 0 }
-        .details .object-value { padding-top: 0; }
-
-        .description {
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-
-        .code-caption
-        {
-            font-style: italic;
-            font-size: 107%;
-            margin: 0;
-        }
-
-        .prettyprint
-        {
-            border: 1px solid #ddd;
-            width: 80%;
-            overflow: auto;
-        }
-
-        .prettyprint.source {
-            width: inherit;
-        }
-
-        .prettyprint code
-        {
-            font-size: 100%;
-            line-height: 18px;
-            display: block;
-            padding: 4px 12px;
-            margin: 0;
-            background-color: #fff;
-            color: #4D4E53;
-        }
-
-        .prettyprint code span.line
-        {
-            display: inline-block;
-        }
-
-        .prettyprint.linenums
-        {
-            padding-left: 70px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        .prettyprint.linenums ol
-        {
-            padding-left: 0;
-        }
-
-        .prettyprint.linenums li
-        {
-            border-left: 3px #ddd solid;
-        }
-
-        .prettyprint.linenums li.selected,
-        .prettyprint.linenums li.selected *
-        {
-            background-color: lightyellow;
-        }
-
-        .prettyprint.linenums li *
-        {
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-            user-select: text;
-        }
-
-        .params, .props
-        {
-            border-spacing: 0;
-            border: 0;
-            border-collapse: collapse;
-        }
-
-        .params .name, .props .name, .name code {
-            color: #4D4E53;
-            font-family: Consolas, Monaco, 'Andale Mono', monospace;
-            font-size: 100%;
-        }
-
-        .params td, .params th, .props td, .props th
-        {
-            border: 1px solid #ddd;
-            margin: 0px;
-            text-align: left;
-            vertical-align: top;
-            padding: 4px 6px;
-            display: table-cell;
-        }
-
-        .params thead tr, .props thead tr
-        {
-            background-color: #ddd;
-            font-weight: bold;
-        }
-
-        .params .params thead tr, .props .props thead tr
-        {
-            background-color: #fff;
-            font-weight: bold;
-        }
-
-        .params th, .props th { border-right: 1px solid #aaa; }
-        .params thead .last, .props thead .last { border-right: 1px solid #ddd; }
-
-        .params td.description > p:first-child,
-        .props td.description > p:first-child
-        {
-            margin-top: 0;
-            padding-top: 0;
-        }
-
-        .params td.description > p:last-child,
-        .props td.description > p:last-child
-        {
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .disabled {
-            color: #454545;
-        }
-
-    </style>
-    <script>
-        /*global document */
-        (function() {
-            var source = document.getElementsByClassName('prettyprint source linenums');
-            var i = 0;
-            var lineNumber = 0;
-            var lineId;
-            var lines;
-            var totalLines;
-            var anchorHash;
-
-            if (source && source[0]) {
-                anchorHash = document.location.hash.substring(1);
-                lines = source[0].getElementsByTagName('li');
-                totalLines = lines.length;
-
-                for (; i < totalLines; i++) {
-                    lineNumber++;
-                    lineId = 'line' + lineNumber;
-                    lines[i].id = lineId;
-                    if (lineId === anchorHash) {
-                        lines[i].className += ' selected';
-                    }
-                }
-            }
-        })();
-
-    </script>
+    <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/prettify.min.css">
+    <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/api/base.css">
 </head>
 <body>
+<input id="staticLoadRelativePath" type="hidden" value="{{staticLoadRelativePath}}">
+<div class="jumbotron headerBg">
+    <div class="container">
+        <div class="page-header">
+            <h1>index.html
+                <small>
+                    <a class="btn btn-primary btn-lg btn-back-home" href="./index.html" role="button">返回目录</a>
+                    <a class="btn btn-primary btn-lg btn-back-roothome" href="{{staticLoadRelativePath}}/index.html"
+                       role="button">返回根目录</a>
+                </small>
+            </h1>
+        </div>
 
-<nav>
-    <h2><a href="./index_jsdoc_zero_menu.html">返回目录</a></h2>
-    <h4>{{ name }} API索引</h4>
-    <ul class="indexs">
-        {% for key, val in content %}
-        {% if !val.ignore %}
-        <li>
-            <a href="#{{val.line}}_{{val.codeStart}}_{{key}}" style="color:#4d4e53;background: {% if val.ctx.receiver %} #FF5722 {% else %} #FFEB3B {% endif %};">
-                {{val.ctx.name|default('没有名称')}}
-            </a>
-        </li>
-        {%endif%}
-        {%endfor%}
-    </ul>
-    <hr/>
-</nav>
-<div id="main">
-    <h1 class="page-title">文件：{{name}}</h1>
-    <header>
-        <h2>
-            <span class="ancestors">路径：{{path.filePath}}</span>
-        </h2>
-    </header>
-    <section id="api" class="api">
-        {% for key, val in content %}
-        {% if !val.ignore %}
-        <article id="{{val.line}}_{{val.codeStart}}_{{key}}" style="margin: 20px 0;background: {% if val.ctx.receiver %} #FF5722 {% else %} #FFEB3B {% endif %};border-radius: 5px;padding: 5px;">
-            <h3 style="text-align: center;color: #8BC34A;border: 1px dashed #8BC34A;">注释名称: {{val.ctx.name|default('没有名称')}}</h3>
-            <table class="params">
-                <thead>
-                <tr>
-                    {% if val.ctx.type %}
-                    <th>type</th>
-                    {% endif %}
-                    <th>isClass</th>
-                    <th>isPrivate</th>
-                    <th>isEvent</th>
-                    <th class="last">isConstructor</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    {% if val.ctx.type %}
-                    <td>{{val.ctx.type}}</td>
-                    {% endif %}
-                    <td>{{val.isClass}}</td>
-                    <td>{{val.isPrivate}}</td>
-                    <td>{{val.isEvent}}</td>
-                    <td class="last">{{val.isConstructor}}</td>
-                </tr>
-                </tbody>
-            </table>
-            <div class='container-overview'>
-                <div class="row" style="padding: 20px;margin: 0;">
-                    <div class="col-md-1" style="color:#009688;">描述：</div>
-                    <div class="showCode col-md-11" style="padding: 0;">
-                        {% autoescape false %}
-                            <pre class="prettyprint" style="background: #CDDC39;margin:0;display: inline-table;">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="bg-info">
+                    <p>源文件名：<code>{{fileNameObject.fileHasExtname}}</code></p>
+                    <p>源文件路径：<kbd>{{sourceProjectPath}}</kbd></p>
+                    <p>生成文件名：<code>{{fileNameObject.generateFile}}</code></p>
+                    <p>生成文件路径：<kbd>{{generateProjectPath}}</kbd></p>
+                </div>
+
+            </div>
+            <div class="panel-body">
+                <h3 class="panel-title">锚点：</h3>
+
+            </div>
+            <div class="panel-footer">
+                <ul class="indexs nav navbar-nav navbar-left">
+                    {% for key, val in content %}
+                    {% if !val.ignore %}
+                    <li>
+                        <a href="#{{val.line}}_{{val.codeStart}}"
+                           class="{% if val.ctx.receiver %} exports {% else %} noExports {% endif %}">
+                            {{val.ctx.name|default('没有名称')}}
+                        </a>
+                    </li>
+                    {%endif%}
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+        <h3></h3>
+    </div>
+</div>
+<header class="site-header jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12"><h1>搜索</h1>
+                <p>在整体项目的生成注释文档中，根据方法名称搜索相关内容：</p>
+                <div class="form-group"><input type="text" class="form-control search clearable"
+                                               placeholder="输入注释的方法名称，例如：contentDisposition"> <i
+                        class="fa glyphicon glyphicon-search" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="all-packages">
+    <div class="container">
+        <div class="list-group packages">
+        </div>
+    </div>
+</div>
+<section class="container">
+    {% for key, val in content %}
+    {% if !val.ignore %}
+    <article class="row articleList {% if val.ctx.receiver %} exports {% else %} noExports {% endif %}"
+             id="{{val.line}}_{{val.codeStart}}">
+        <h3>注释名称:
+            {{val.ctx.name|default('没有名称')}}</h3>
+
+
+        <div class="col-md-12">
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home_{{val.line}}_{{val.codeStart}}_{{key}}" aria-controls="home"
+                       role="tab" data-toggle="tab">描述：</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile_{{val.line}}_{{val.codeStart}}_{{key}}" aria-controls="profile"
+                       role="tab" data-toggle="tab">类别</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active"
+                     id="home_{{val.line}}_{{val.codeStart}}_{{key}}">
+                    {% autoescape false %}
+                    <pre class="prettyprint paramDecs">
                                 {{ val.description.full }}
                             </pre>
-                        {% endautoescape %}
-                    </div>
+                    {% endautoescape %}
                 </div>
-
-                {% if val.tags.length > 0 %}
-                <table class="params"
-                       style="background: #70b5ee;margin: 0 20px;">
-                    <thead>
-                    <tr>
-                        <th>参数</th>
-                        <th>描述</th>
-                        <th>类型</th>
-                        <th>类型描述</th>
-                        <th>optional</th>
-                        <th>nullable</th>
-                        <th>nonNullable</th>
-                        <th class="last">variable</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {% for key, val_tag in val.tags|reverse %}
-                    {% if val_tag %}
-                    <tr>
-                        <td>{{val_tag.type}}</td>
-                        <td>{{val_tag.string}}</td>
-                        <td>{{val_tag.types|join(',')}}</td>
-                        {% autoescape false %}
-                        <td>{{val_tag.typesDescription}}</td>
-                        {% endautoescape %}
-                        <td>{{val_tag.optional}}</td>
-                        <td>{{val_tag.nullable}}</td>
-                        <td>{{val_tag.nonNullable}}</td>
-                        <td class="last">{{val_tag.variable}}</td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}
-                    </tbody>
-                </table>
-                {% endif %}
-
-                <div class="row" style="padding: 0 20px 20px 20px;margin: 0;">
-                    <dl class="details" style="background: #f5f5f5;margin: 14px 0 0 0;padding: 3px 10px;color: #607D8B;">
-                        <span>注释位置（link）：{{val.line}}，源码位置（link）： {{val.codeStart}}</span>
-                    </dl>
+                <div role="tabpanel" class="tab-pane"
+                     id="profile_{{val.line}}_{{val.codeStart}}_{{key}}">
+                    <table class="table params">
+                        <thead>
+                        <tr>
+                            {% if val.ctx.type %}
+                            <th>type</th>
+                            {% endif %}
+                            <th>isClass</th>
+                            <th>isPrivate</th>
+                            <th>isEvent</th>
+                            <th class="last">isConstructor</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            {% if val.ctx.type %}
+                            <td>{{val.ctx.type}}</td>
+                            {% endif %}
+                            <td>{{val.isClass}}</td>
+                            <td>{{val.isPrivate}}</td>
+                            <td>{{val.isEvent}}</td>
+                            <td class="last">{{val.isConstructor}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </article>
-        {% endif %}
-        {% endfor %}
-    </section>
-</div>
+
+
+            {% if val.tags.length > 0 %}
+            <div class="panel panel-default paramPanel">
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>参数</th>
+                            <th>描述</th>
+                            <th>类型</th>
+                            <th>类型描述</th>
+                            <th>optional</th>
+                            <th>nullable</th>
+                            <th>nonNullable</th>
+                            <th class="last">variable</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for key, val_tag in val.tags|reverse %}
+                        {% if val_tag %}
+                        <tr>
+                            <td>{{val_tag.type}}</td>
+                            <td>{{val_tag.string}}</td>
+                            <td>{{val_tag.types|join(',')}}</td>
+                            {% autoescape false %}
+                            <td>{{val_tag.typesDescription}}</td>
+                            {% endautoescape %}
+                            <td>{{val_tag.optional}}</td>
+                            <td>{{val_tag.nullable}}</td>
+                            <td>{{val_tag.nonNullable}}</td>
+                            <td class="last">{{val_tag.variable}}</td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+
+
+            <dl class="details"
+                style="background: #f5f5f5;margin: 14px 0 0 0;padding: 3px 10px;color: #607D8B;">
+                <span>注释位置（link）：{{val.line}}，源码位置（link）： {{val.codeStart}}</span>
+            </dl>
+        </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+</section>
+<a href="#" id="back-to-top" style="display: inline;"><i class="fa glyphicon glyphicon-chevron-up"></i></a>
 <br class="clear">
+<footer>
+    <a class="forkme" href="https://github.com/kahn1990/jsdoc-zero">Fork me on GitHub</a>
+</footer>
+<script type="application/javascript" src="{{staticLoadRelativePath}}/jsdoc_static/jquery.min.js"></script>
+<script type="application/javascript" src="{{staticLoadRelativePath}}/jsdoc_static/prettify.min.js"></script>
+<script type="application/javascript"
+        src="{{staticLoadRelativePath}}/jsdoc_static/bootstrap/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="{{staticLoadRelativePath}}/jsdocList.js"></script>
+<script type="application/javascript" src="{{staticLoadRelativePath}}/jsdoc_static/api/base.js"></script>
 </body>
 </html>

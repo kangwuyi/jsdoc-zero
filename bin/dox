@@ -78,8 +78,9 @@ switch (cmd) {
         testBuildCommand(process.argv.slice(3));
         //process.exit(1);
         loadConfigFiled.source.exclude = _.map(loadConfigFiled.source.exclude, function (item) {
-            return _.str.strRight(path.resolve(item),loadConfigFiled.projectHomePath).substring(1);
+            return path.normalize(item);
         });
+        loadConfigFiled.source.output = path.normalize(loadConfigFiled.source.output);
         dox(loadConfigFiled, function (err) {
             if (err) {
                 console.log(chalk.blue.bgRed.bold('\n\t生成文档失败' + err));
@@ -93,7 +94,7 @@ switch (cmd) {
 }
 
 
-console.log(chalk.blue.bgRed.bold('\n\t路径' + loadConfigFiled.source.output + '/index_jsdoc_zero_menu.html 查看文档'));
+console.log(chalk.blue.bgRed.bold('\n\t see ' + loadConfigFiled.source.output + '/index.html'));
 
 process.exit(0);
 
@@ -127,3 +128,16 @@ function testBuildCommand(avgs) {
         }
     }
 }
+/**
+ *
+ 源全局路径（不包含文件） sourceGlobalPath
+ 源全局路径文件 sourceGlobalPathFile
+ 源项目路径（不包含文件） sourceProjectPath
+ 源项目路径文件 sourceProjectPathFile
+ 源文件名 sourceFileName
+ 生成全局路径（不包含文件） generateGlobalPath
+ 生成全局路径文件 generateGlobalPathFile
+ 生成项目路径（不包含文件） generateProjectPath
+ 生成项目路径文件 generateProjectPathFile
+ 生成文件名 generateFileName
+ */

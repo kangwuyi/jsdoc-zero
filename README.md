@@ -9,11 +9,9 @@ JSDOC-ZERO ![](https://travis-ci.org/kahn1990/jsdoc-zero.svg?branch=master)
 ## 简介 (Introductions)
 
 基于 jsdoc 规范，适用于工程较大、文件内容较多、文件夹层次较深的项目。
-Based on the JSDoc specification, the project is suitable for the larger project, the document content, the folder level of the project.
 
 ## 安装 (Installation)
 安装 JSDOC-ZERO 为全局工具：
-Install JSDOC-ZERO as global tool:
 
 ```
 $ npm install jsdoc-zero -g
@@ -24,7 +22,6 @@ $ npm install jsdoc-zero -g
 ### 建立配置文件 (Create configuration file)
 
 首先在项目根目录下建立 `dox.config.json` 文件，默认内容为：
-First, the project root directory to establish the `dox.config.json` file, the default content:
 
 ```
 {
@@ -55,60 +52,66 @@ First, the project root directory to establish the `dox.config.json` file, the d
     - suffix : 待检查文件的后缀名，默认检查 `js` 文件和 `md` 文件
     - output : 输出目录，默认输出 `doc/dox`
 
-Which meaning:
+新建文件 `dox.config.json` 完成之后，根据自己的具体项目完善配置文件，然后在当前项目的根目录下的命令行中执行命令：
 
-- Name: project name
-- version: version number
-- source
-    - include: the collection of the directory to be checked, the default check `lib` folder
-    - exclude: you need to filter the directory collection, the default filter `node_modules` folder
-    - suffix: to check the file suffix, the default check `js` files and `md` files
-    - output: output directory, the default output `doc/dox`
-
-使用的时候直接在项目根目录下执行 `jdz build`。
-When used directly in the project root directory `jdz build`.
+```js
+$ jdz build
+```
+此时 `jdz` 会自动寻找项目跟目录下的 `dox.config.json` 文件进行相关操作。
 
 ### 命令行使用 (Command line usage)
 
-为了简单直白，我只保留了 `build` 功能，相关的参数也只有 `-o` 和 `-d`：
-In order to straightforward, I only keep the `build` function, only `-o` and `-d` related parameters:
+如果想要在命令行直接使用，为了简单直白，我只保留了 `build` 功能，相关的参数也只有 `-o` 和 `-d`：
 
 - `-o` : 指定输出目录，如 `-o doc/box`
 - `-d` : 指定待检查目录的集合，如 `-d ['lib', 'server']`
 
-- `-o`: specify the output directory, such as `-o doc/box`
-- `-d`: Specifies the collection of the list to be checked, such as `-d ['lib', 'server']`
-
 在命令行直接执行：`jdz build -o doc/box -d ['lib', 'server']`，并且 `-o` 缺省为默认配置文件中的 `doc/dox`，`-d` 缺省为默认配置文件中的 `['lib']`。
-Execute directly on the command line: `jdz build -o doc/box -d ['lib''server']`, and `-o` default as the default configuration file in the `doc/dox`, `-d` default to the default configuration file in the `['lib']`.
 
 ### 注意 (Careful)
 
 JSDOC-ZERO 每次生成文档的时候都会清空 `输出目录` 下的所有文件。
-JSDOC-ZERO every time the document will be generated when the output directory of all the documents.
 
 ### 效果图 (Sample picture)
 
-首先 JSDOC-ZERO 会在输出目录下建立一个索引文件： `index_jsdoc_zero_menu.html`，包含`待检查目录的集合`和其（包括子目录）目录下的所有 `md` 文件。
-First JSDOC-ZERO will be in the output directory to create an index file: `index_jsdoc_zero_menu.html`, containing the 'to be checked in the directory' and its (including sub directory) directory of all the `md` files.
+首先 JSDOC-ZERO 会在输出目录下建立一个索引文件： `index.html`，包含`待检查目录的集合`和其（包括子目录）目录下的所有 `md` 文件。
 
-![](./img/index_1.png)
+![](./img/11_index.PNG)
 
 每一层文件夹逐一对应项目中 `待检查目录` 的文件夹：
 
-![](./img/menu_1.png)
+![](./img/11_dir.PNG)
+
+然后一层一层递归：
+
+![](./img/11_dir2.PNG)
+
+生成的 `JSDOC` 规范的文件，在文件开头包含基本的文件信息：
+
+![](./img/11_js1.PNG)
+
+这里设置了页面方法的锚点，用于快速跳转：
+
+![](./img/11_js4.PNG)
+
+相关细节（黄色代表普通的注释，而红色代表输出到 `exports` 上的对象的注释，注释的具体细节）：
+
+![](./img/11_js2.PNG)
+
+新增的搜索功能：
+
+![](./img/11_js5.PNG)
+
+可根据输入的注释方法名称，寻找相关的注释文件，点击后跳转到相关文件：
+
+![](./img/11_js6.PNG)
 
 `md` 文件效果图：
 
-![](./img/md_1.png)
+![](./img/11_md.PNG)
 
-生成的 `JSDOC` 规范的文件：
-
-![](./img/js_1.png)
-
-黄色代表普通的注释，而红色代表输出到 `exports` 上的对象的注释，注释的具体细节：
-
-![](./img/js_2.png)
+对于代码标色的问题，这里只是做了简单的处理，所以可能看上去有一点单调：
+![](./img/11_md2.PNG)
 
 ### 模版
 
@@ -116,3 +119,14 @@ First JSDOC-ZERO will be in the output directory to create an index file: `index
 
 ### 依赖
 依赖于 TJ 的 [dox](https://github.com/tj/dox)。
+
+### 更新
+
+#### `2016/7/15`
+
+1. 修改部分代码写法，增强可阅读性
+1. 修改所有页面的 css 样式
+1. 增加相对静态路径，将 js 等静态资源从 cdn 转为本地静态资源
+1. 增加文件相关信息
+1. 增加搜索功能，可以根据相关注释方法名搜索到相应文件
+1. 增加返回根目录功能以及生成文件名用 base64 处理
