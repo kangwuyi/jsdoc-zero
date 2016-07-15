@@ -33,7 +33,7 @@
         <div class="col-xs-12"><h1 class="text-center heading -page-download">Markdown 文件</h1></div>
         {% for key, val in content.linkList %}
         <div class="col-xs-12 col-sm-4">
-            <a href="./{{val.generateFile}}" class="col-xs-12 link -download">
+            <a href="./{{val.relativeProjectPathFile}}" class="col-xs-12 link -download">
                 <i class="icon-linux"></i>{{ val.fileHasExtname }}
             </a>
         </div>

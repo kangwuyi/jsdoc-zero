@@ -97,6 +97,7 @@ div.headerBg .panel-body h3 {
 
 div.headerBg .panel-footer {
     display: inline-block;
+    width: 100%;
 }
 
 .site-header {
