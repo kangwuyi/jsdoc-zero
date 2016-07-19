@@ -32,13 +32,7 @@ if (!_.isArray(loadConfigFiled.source.suffix)) loadConfigFiled.source.suffix = d
 
 console.log('\n--------------------这里是文档生成工具：--------------------'.rainbow);
 
-command
-    .version(
-        console.log(`
-        name: ${chalk.green(loadConfigFiled.name)}
-        version: ${chalk.yellow(loadConfigFiled.version)}
-        `)
-    )
+command.version(console.log('name: '+chalk.green(loadConfigFiled.name)+'\nversion: '+chalk.yellow(loadConfigFiled.version)))
     .usage('<keywords>')
     .command('build')
     .description('开始生成文档')
@@ -128,16 +122,3 @@ function testBuildCommand(avgs) {
         }
     }
 }
-/**
- *
- 源全局路径（不包含文件） sourceGlobalPath
- 源全局路径文件 sourceGlobalPathFile
- 源项目路径（不包含文件） sourceProjectPath
- 源项目路径文件 sourceProjectPathFile
- 源文件名 sourceFileName
- 生成全局路径（不包含文件） generateGlobalPath
- 生成全局路径文件 generateGlobalPathFile
- 生成项目路径（不包含文件） generateProjectPath
- 生成项目路径文件 generateProjectPathFile
- 生成文件名 generateFileName
- */
