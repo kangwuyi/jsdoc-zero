@@ -6,7 +6,7 @@
       "lib"
     ],
     "exclude": [],
-    "Suffix" : [
+    "suffix" : [
       ".js"
     ],
     "output" : "doc/dox"

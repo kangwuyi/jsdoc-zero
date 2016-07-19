@@ -6,7 +6,6 @@
 
 var command       = require('commander'),
     path          = require('path'),
-    colors        = require("colors"),
     _             = require('underscore'),
     underscoreStr = require('underscore.string'),
     chalk         = require('chalk'),
@@ -50,9 +49,9 @@ var showHelp = function () {
 };
 
 command.on('--help', function () {
-    console.log('\tCommands:\n'.green);
+    console.log('\tCommands:\n');
     console.log('\t\t\$ build       创建文档\n');
-    console.log('\tExamples:\n'.green);
+    console.log('\tExamples:\n');
     console.log('\t\t\$ doxmate build \-o \<folder\> \-d [\<folder\>,...]\n');
     process.exit(1);
 });                                                                                   // 命令行帮助
@@ -83,7 +82,7 @@ switch (cmd) {
         });
         break;
     default:
-        console.error(colors.inverse('\n\t提示：不能找到命令 ' + cmd + ' !'));
+        console.error('\n\t提示：不能找到命令 ' + cmd + ' !');
         return showHelp();
 }
 
