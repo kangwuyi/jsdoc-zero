@@ -4,38 +4,34 @@
     <meta charset="utf-8">
     <title>索引</title>
     <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/markdown/base.css">
-    <link id="linkstyle" rel='stylesheet' href='{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown16.css'/>
+    <link id="linkstyle" rel='stylesheet' href='{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown14.css'/>
     <link rel="stylesheet" href="{{staticLoadRelativePath}}/jsdoc_static/prettify.min.css">
+
 </head>
-<body>
+<body onload="prettyPrint()">
 <div id="preview-box">
-    <h3>文件信息</h3>
+    <h3>文件信息<a href="./index.html"> 返回目录</a></h3>
     <div>
-        <p>源文件名：{{fileNameObject.fileHasExtname}}</p>
-        <p>源文件路径：{{sourceProjectPath}}</p>
-        <p>生成文件名：{{fileNameObject.generateFile}}</p>
-        <p>生成文件路径：{{generateProjectPath}}</p>
-    </div>
-    <div>
-        <span><a href="./index.html">返回目录</a></span>
-        <select id="themes">
-            <option value="{{staticLoadRelativePath}}jsdoc_static/markdown/markdown1.css">主题一</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown2.css">主题二</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown3.css">主题三</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown4.css">主题四</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown5.css">主题五</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown6.css">主题六</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown7.css">主题七</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown8.css">主题八</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown9.css">主题九</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown10.css">主题十</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown11.css">主题十一</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown12.css">主题十二</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown13.css">主题十三</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown14.css">主题十四</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown15.css">主题十五</option>
-            <option value="{{staticLoadRelativePath}}/jsdoc_static/markdown/markdown16.css">主题十六</option>
-        </select>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>源文件名：</td>
+                <td>{{fileNameObject.fileHasExtname}}</td>
+            </tr>
+            <tr>
+                <td>源文件路径：</td>
+                <td>{{sourceProjectPath}}</td>
+            </tr>
+            <tr>
+                <td>生成文件名：</td>
+                <td>{{fileNameObject.generateFile}}</td>
+            </tr>
+            <tr>
+                <td>生成文件路径：</td>
+                <td>{{generateProjectPath}}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
@@ -53,17 +49,8 @@
 
 <script>
     $(document).ready(function () {
-        $(window).load(function () {
-            $("pre").addClass("prettyprint source linenums");
-            prettyPrint();
-        });
+        $("pre").addClass("prettyprint source linenums");
     });
-    var linkstyle = document.getElementById('linkstyle');
-    var themes = document.getElementById('themes');
-
-    themes.onchange = function (e) {
-        linkstyle.href = themes.value;
-    };
 </script>
 </body>
 </html>

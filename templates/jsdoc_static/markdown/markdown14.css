@@ -58,7 +58,7 @@ h1 a:hover {
 }
 
 pre {
-	background: rgba(0,0,0,0.3);
+	background: #ccc;
 	color: #fff;
 	padding: 8px 10px;
 	border-radius: 0.4em;
@@ -66,9 +66,12 @@ pre {
 	-webkit-border-radius: 0.4em;
 	overflow-x: hidden;
 }
-
+code{
+	background: #800;
+}
 pre code {
 	font-size: 10pt;
+	background: transparent;
 }
 
 .thumb { 
