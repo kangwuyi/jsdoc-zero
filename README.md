@@ -69,20 +69,20 @@ when `JSDOC-ZERO` generating documentation, it will empty all files under `the o
 
 First `JSDOC-ZERO` in the output directory to establish an index file: ` index.html`, it contains `Waiting for the check folder` and its subdirectories directory of all ` md ` files.
 
-![](./img/gif/menuogv.gif)
+![](./img/gif/menu.gif)
 
 Generated ` JSDOC ` specification file, it include the basic file information at the head and set the anchor point of the page method, is used for quick jump.
 
-![](./img/gif/jsogv.gif)
+![](./img/gif/js.gif)
 
 New add search function and it will search for file‘s comments content by the input method name：
 
-![](./img/gif/searchogv.gif)
+![](./img/gif/search.gif)
 
 
 The `md` file rendering display：
 
-![](./img/gif/mdogv.gif)
+![](./img/gif/md.gif)
 
 ## Update
 
